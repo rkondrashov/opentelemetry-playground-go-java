@@ -1,0 +1,397 @@
+{
+    "data": [
+        {
+            "traceID": "12435c52a170c2d2afedf051bb989af5",
+            "spans": [
+                {
+                    "traceID": "12435c52a170c2d2afedf051bb989af5",
+                    "spanID": "2116587e337b0934",
+                    "operationName": "/",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "12435c52a170c2d2afedf051bb989af5",
+                            "spanID": "2fb85b3a91d52843"
+                        }
+                    ],
+                    "startTime": 1615894444852001,
+                    "duration": 1231,
+                    "tags": [
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "GET"
+                        },
+                        {
+                            "key": "thread.id",
+                            "type": "int64",
+                            "value": 27
+                        },
+                        {
+                            "key": "thread.name",
+                            "type": "string",
+                            "value": "http-nio-8081-exec-6"
+                        },
+                        {
+                            "key": "net.peer.ip",
+                            "type": "string",
+                            "value": "127.0.0.1"
+                        },
+                        {
+                            "key": "http.client_ip",
+                            "type": "string",
+                            "value": "127.0.0.1"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://localhost:8081/"
+                        },
+                        {
+                            "key": "net.peer.port",
+                            "type": "int64",
+                            "value": 60754
+                        },
+                        {
+                            "key": "http.user_agent",
+                            "type": "string",
+                            "value": "Java/11.0.9"
+                        },
+                        {
+                            "key": "http.flavor",
+                            "type": "string",
+                            "value": "1.1"
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "int64",
+                            "value": 204
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "server"
+                        },
+                        {
+                            "key": "otel.library.name",
+                            "type": "string",
+                            "value": "io.opentelemetry.javaagent.tomcat-7.0"
+                        },
+                        {
+                            "key": "otel.library.version",
+                            "type": "string",
+                            "value": "1.0.1"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": null
+                },
+                {
+                    "traceID": "12435c52a170c2d2afedf051bb989af5",
+                    "spanID": "0df050c27581d4cd",
+                    "operationName": "ExampleController.get",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "12435c52a170c2d2afedf051bb989af5",
+                            "spanID": "2116587e337b0934"
+                        }
+                    ],
+                    "startTime": 1615894444852733,
+                    "duration": 100,
+                    "tags": [
+                        {
+                            "key": "thread.id",
+                            "type": "int64",
+                            "value": 27
+                        },
+                        {
+                            "key": "thread.name",
+                            "type": "string",
+                            "value": "http-nio-8081-exec-6"
+                        },
+                        {
+                            "key": "otel.library.name",
+                            "type": "string",
+                            "value": "io.opentelemetry.javaagent.spring-webmvc-3.1"
+                        },
+                        {
+                            "key": "otel.library.version",
+                            "type": "string",
+                            "value": "1.0.1"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": null
+                },
+                {
+                    "traceID": "12435c52a170c2d2afedf051bb989af5",
+                    "spanID": "2fb85b3a91d52843",
+                    "operationName": "HTTP GET",
+                    "references": [],
+                    "startTime": 1615894444850002,
+                    "duration": 2948,
+                    "tags": [
+                        {
+                            "key": "net.transport",
+                            "type": "string",
+                            "value": "IP.TCP"
+                        },
+                        {
+                            "key": "net.peer.name",
+                            "type": "string",
+                            "value": "localhost"
+                        },
+                        {
+                            "key": "thread.id",
+                            "type": "int64",
+                            "value": 1
+                        },
+                        {
+                            "key": "http.flavor",
+                            "type": "string",
+                            "value": "1.1"
+                        },
+                        {
+                            "key": "net.peer.port",
+                            "type": "int64",
+                            "value": 8081
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://localhost:8081"
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "GET"
+                        },
+                        {
+                            "key": "thread.name",
+                            "type": "string",
+                            "value": "main"
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "int64",
+                            "value": 204
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "client"
+                        },
+                        {
+                            "key": "otel.library.name",
+                            "type": "string",
+                            "value": "io.opentelemetry.javaagent.http-url-connection"
+                        },
+                        {
+                            "key": "otel.library.version",
+                            "type": "string",
+                            "value": "1.0.1"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p2",
+                    "warnings": null
+                }
+            ],
+            "processes": {
+                "p1": {
+                    "serviceName": "java-service",
+                    "tags": [
+                        {
+                            "key": "jaeger.version",
+                            "type": "string",
+                            "value": "opentelemetry-java"
+                        },
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "127.0.1.1"
+                        },
+                        {
+                            "key": "hostname",
+                            "type": "string",
+                            "value": "lxmroko"
+                        },
+                        {
+                            "key": "os.description",
+                            "type": "string",
+                            "value": "Linux 5.8.0-41-generic"
+                        },
+                        {
+                            "key": "os.type",
+                            "type": "string",
+                            "value": "LINUX"
+                        },
+                        {
+                            "key": "process.command_line",
+                            "type": "string",
+                            "value": "/usr/lib/jvm/java-11-adopt-hotspot-amd64:bin:java -javaagent:opentelemetry-javaagent-all.jar -Dotel.traces.exporter=jaeger -Dotel.metrics.exporter=none -Dotel.resource.attributes=service.name=java-service"
+                        },
+                        {
+                            "key": "process.executable.path",
+                            "type": "string",
+                            "value": "/usr/lib/jvm/java-11-adopt-hotspot-amd64:bin:java"
+                        },
+                        {
+                            "key": "process.pid",
+                            "type": "int64",
+                            "value": 1541720
+                        },
+                        {
+                            "key": "process.runtime.description",
+                            "type": "string",
+                            "value": "AdoptOpenJDK OpenJDK 64-Bit Server VM 11.0.9+11"
+                        },
+                        {
+                            "key": "process.runtime.name",
+                            "type": "string",
+                            "value": "OpenJDK Runtime Environment"
+                        },
+                        {
+                            "key": "process.runtime.version",
+                            "type": "string",
+                            "value": "11.0.9+11"
+                        },
+                        {
+                            "key": "service.name",
+                            "type": "string",
+                            "value": "java-service"
+                        },
+                        {
+                            "key": "telemetry.auto.version",
+                            "type": "string",
+                            "value": "1.0.1"
+                        },
+                        {
+                            "key": "telemetry.sdk.language",
+                            "type": "string",
+                            "value": "java"
+                        },
+                        {
+                            "key": "telemetry.sdk.name",
+                            "type": "string",
+                            "value": "opentelemetry"
+                        },
+                        {
+                            "key": "telemetry.sdk.version",
+                            "type": "string",
+                            "value": "1.0.1"
+                        }
+                    ]
+                },
+                "p2": {
+                    "serviceName": "java-client",
+                    "tags": [
+                        {
+                            "key": "jaeger.version",
+                            "type": "string",
+                            "value": "opentelemetry-java"
+                        },
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "127.0.1.1"
+                        },
+                        {
+                            "key": "hostname",
+                            "type": "string",
+                            "value": "lxmroko"
+                        },
+                        {
+                            "key": "os.description",
+                            "type": "string",
+                            "value": "Linux 5.8.0-41-generic"
+                        },
+                        {
+                            "key": "os.type",
+                            "type": "string",
+                            "value": "LINUX"
+                        },
+                        {
+                            "key": "process.command_line",
+                            "type": "string",
+                            "value": "/usr/lib/jvm/java-11-adopt-hotspot-amd64:bin:java -javaagent:opentelemetry-javaagent-all.jar -Dotel.traces.exporter=jaeger -Dotel.metrics.exporter=none -Dotel.resource.attributes=service.name=java-client"
+                        },
+                        {
+                            "key": "process.executable.path",
+                            "type": "string",
+                            "value": "/usr/lib/jvm/java-11-adopt-hotspot-amd64:bin:java"
+                        },
+                        {
+                            "key": "process.pid",
+                            "type": "int64",
+                            "value": 1542141
+                        },
+                        {
+                            "key": "process.runtime.description",
+                            "type": "string",
+                            "value": "AdoptOpenJDK OpenJDK 64-Bit Server VM 11.0.9+11"
+                        },
+                        {
+                            "key": "process.runtime.name",
+                            "type": "string",
+                            "value": "OpenJDK Runtime Environment"
+                        },
+                        {
+                            "key": "process.runtime.version",
+                            "type": "string",
+                            "value": "11.0.9+11"
+                        },
+                        {
+                            "key": "service.name",
+                            "type": "string",
+                            "value": "java-client"
+                        },
+                        {
+                            "key": "telemetry.auto.version",
+                            "type": "string",
+                            "value": "1.0.1"
+                        },
+                        {
+                            "key": "telemetry.sdk.language",
+                            "type": "string",
+                            "value": "java"
+                        },
+                        {
+                            "key": "telemetry.sdk.name",
+                            "type": "string",
+                            "value": "opentelemetry"
+                        },
+                        {
+                            "key": "telemetry.sdk.version",
+                            "type": "string",
+                            "value": "1.0.1"
+                        }
+                    ]
+                }
+            },
+            "warnings": null
+        }
+    ],
+    "total": 0,
+    "limit": 0,
+    "offset": 0,
+    "errors": null
+}

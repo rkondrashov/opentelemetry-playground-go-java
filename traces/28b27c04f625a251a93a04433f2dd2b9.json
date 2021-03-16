@@ -1,0 +1,332 @@
+{
+    "data": [
+        {
+            "traceID": "28b27c04f625a251a93a04433f2dd2b9",
+            "spans": [
+                {
+                    "traceID": "28b27c04f625a251a93a04433f2dd2b9",
+                    "spanID": "9cfae67913235cd7",
+                    "flags": 1,
+                    "operationName": "GET",
+                    "references": [],
+                    "startTime": 1615891338666232,
+                    "duration": 3859,
+                    "tags": [
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "GET"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://localhost:8081"
+                        },
+                        {
+                            "key": "http.scheme",
+                            "type": "string",
+                            "value": "http"
+                        },
+                        {
+                            "key": "http.host",
+                            "type": "string",
+                            "value": "localhost:8081"
+                        },
+                        {
+                            "key": "http.flavor",
+                            "type": "string",
+                            "value": "1.1"
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "int64",
+                            "value": 204
+                        },
+                        {
+                            "key": "service.name",
+                            "type": "string",
+                            "value": "unknown_service:client"
+                        },
+                        {
+                            "key": "telemetry.sdk.language",
+                            "type": "string",
+                            "value": "go"
+                        },
+                        {
+                            "key": "telemetry.sdk.name",
+                            "type": "string",
+                            "value": "opentelemetry"
+                        },
+                        {
+                            "key": "telemetry.sdk.version",
+                            "type": "string",
+                            "value": "0.18.0"
+                        },
+                        {
+                            "key": "otel.instrumentation_library.name",
+                            "type": "string",
+                            "value": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
+                        },
+                        {
+                            "key": "otel.instrumentation_library.version",
+                            "type": "string",
+                            "value": "semver:0.18.0"
+                        },
+                        {
+                            "key": "status.code",
+                            "type": "int64",
+                            "value": 0
+                        },
+                        {
+                            "key": "status.message",
+                            "type": "string",
+                            "value": "HTTP status code: 204"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "client"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "jaeger"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": null
+                },
+                {
+                    "traceID": "28b27c04f625a251a93a04433f2dd2b9",
+                    "spanID": "375cb3ce70958742",
+                    "operationName": "ExampleController.get",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "28b27c04f625a251a93a04433f2dd2b9",
+                            "spanID": "6f92f3a8172382b8"
+                        }
+                    ],
+                    "startTime": 1615891338666867,
+                    "duration": 353,
+                    "tags": [
+                        {
+                            "key": "thread.name",
+                            "type": "string",
+                            "value": "http-nio-8081-exec-1"
+                        },
+                        {
+                            "key": "thread.id",
+                            "type": "int64",
+                            "value": 22
+                        },
+                        {
+                            "key": "otel.library.name",
+                            "type": "string",
+                            "value": "io.opentelemetry.javaagent.spring-webmvc-3.1"
+                        },
+                        {
+                            "key": "otel.library.version",
+                            "type": "string",
+                            "value": "1.0.1"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p2",
+                    "warnings": null
+                },
+                {
+                    "traceID": "28b27c04f625a251a93a04433f2dd2b9",
+                    "spanID": "6f92f3a8172382b8",
+                    "operationName": "/",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "28b27c04f625a251a93a04433f2dd2b9",
+                            "spanID": "9cfae67913235cd7"
+                        }
+                    ],
+                    "startTime": 1615891338666001,
+                    "duration": 2847,
+                    "tags": [
+                        {
+                            "key": "http.status_code",
+                            "type": "int64",
+                            "value": 204
+                        },
+                        {
+                            "key": "net.peer.port",
+                            "type": "int64",
+                            "value": 58570
+                        },
+                        {
+                            "key": "http.user_agent",
+                            "type": "string",
+                            "value": "Go-http-client/1.1"
+                        },
+                        {
+                            "key": "http.flavor",
+                            "type": "string",
+                            "value": "1.1"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://localhost:8081/"
+                        },
+                        {
+                            "key": "thread.name",
+                            "type": "string",
+                            "value": "http-nio-8081-exec-1"
+                        },
+                        {
+                            "key": "net.peer.ip",
+                            "type": "string",
+                            "value": "127.0.0.1"
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "GET"
+                        },
+                        {
+                            "key": "thread.id",
+                            "type": "int64",
+                            "value": 22
+                        },
+                        {
+                            "key": "http.client_ip",
+                            "type": "string",
+                            "value": "127.0.0.1"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "server"
+                        },
+                        {
+                            "key": "otel.library.name",
+                            "type": "string",
+                            "value": "io.opentelemetry.javaagent.tomcat-7.0"
+                        },
+                        {
+                            "key": "otel.library.version",
+                            "type": "string",
+                            "value": "1.0.1"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p2",
+                    "warnings": null
+                }
+            ],
+            "processes": {
+                "p1": {
+                    "serviceName": "go-client",
+                    "tags": []
+                },
+                "p2": {
+                    "serviceName": "java-service",
+                    "tags": [
+                        {
+                            "key": "jaeger.version",
+                            "type": "string",
+                            "value": "opentelemetry-java"
+                        },
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "127.0.1.1"
+                        },
+                        {
+                            "key": "hostname",
+                            "type": "string",
+                            "value": "lxmroko"
+                        },
+                        {
+                            "key": "os.description",
+                            "type": "string",
+                            "value": "Linux 5.8.0-41-generic"
+                        },
+                        {
+                            "key": "os.type",
+                            "type": "string",
+                            "value": "LINUX"
+                        },
+                        {
+                            "key": "process.command_line",
+                            "type": "string",
+                            "value": "/usr/lib/jvm/java-11-adopt-hotspot-amd64:bin:java -javaagent:opentelemetry-javaagent-all.jar -Dotel.traces.exporter=jaeger -Dotel.metrics.exporter=none -Dotel.resource.attributes=service.name=java-service"
+                        },
+                        {
+                            "key": "process.executable.path",
+                            "type": "string",
+                            "value": "/usr/lib/jvm/java-11-adopt-hotspot-amd64:bin:java"
+                        },
+                        {
+                            "key": "process.pid",
+                            "type": "int64",
+                            "value": 1528072
+                        },
+                        {
+                            "key": "process.runtime.description",
+                            "type": "string",
+                            "value": "AdoptOpenJDK OpenJDK 64-Bit Server VM 11.0.9+11"
+                        },
+                        {
+                            "key": "process.runtime.name",
+                            "type": "string",
+                            "value": "OpenJDK Runtime Environment"
+                        },
+                        {
+                            "key": "process.runtime.version",
+                            "type": "string",
+                            "value": "11.0.9+11"
+                        },
+                        {
+                            "key": "service.name",
+                            "type": "string",
+                            "value": "java-service"
+                        },
+                        {
+                            "key": "telemetry.auto.version",
+                            "type": "string",
+                            "value": "1.0.1"
+                        },
+                        {
+                            "key": "telemetry.sdk.language",
+                            "type": "string",
+                            "value": "java"
+                        },
+                        {
+                            "key": "telemetry.sdk.name",
+                            "type": "string",
+                            "value": "opentelemetry"
+                        },
+                        {
+                            "key": "telemetry.sdk.version",
+                            "type": "string",
+                            "value": "1.0.1"
+                        }
+                    ]
+                }
+            },
+            "warnings": null
+        }
+    ],
+    "total": 0,
+    "limit": 0,
+    "offset": 0,
+    "errors": null
+}

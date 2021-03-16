@@ -1,0 +1,1486 @@
+{
+    "data": [
+        {
+            "traceID": "bf4b0cc42c8f949e8db9b92d991bab69",
+            "spans": [
+                {
+                    "traceID": "bf4b0cc42c8f949e8db9b92d991bab69",
+                    "spanID": "8db9b92d991bab69",
+                    "operationName": "otel-go.default.svc.cluster.local:8080/*",
+                    "references": [],
+                    "startTime": 1615835912953348,
+                    "duration": 17759,
+                    "tags": [
+                        {
+                            "key": "istio.canonical_revision",
+                            "type": "string",
+                            "value": "latest"
+                        },
+                        {
+                            "key": "response_flags",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "peer.address",
+                            "type": "string",
+                            "value": "172.17.0.1"
+                        },
+                        {
+                            "key": "node_id",
+                            "type": "string",
+                            "value": "router~172.17.0.4~istio-ingressgateway-79df7c789f-7q7sh.istio-system~istio-system.svc.cluster.local"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://10.101.176.218/"
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "GET"
+                        },
+                        {
+                            "key": "http.protocol",
+                            "type": "string",
+                            "value": "HTTP/1.1"
+                        },
+                        {
+                            "key": "istio.namespace",
+                            "type": "string",
+                            "value": "istio-system"
+                        },
+                        {
+                            "key": "downstream_cluster",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "guid:x-request-id",
+                            "type": "string",
+                            "value": "60195bd7-f931-987d-85a8-5acb7a435323"
+                        },
+                        {
+                            "key": "response_size",
+                            "type": "string",
+                            "value": "1215"
+                        },
+                        {
+                            "key": "istio.mesh_id",
+                            "type": "string",
+                            "value": "unknown"
+                        },
+                        {
+                            "key": "upstream_cluster",
+                            "type": "string",
+                            "value": "outbound|8080||otel-go.default.svc.cluster.local"
+                        },
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "proxy"
+                        },
+                        {
+                            "key": "user_agent",
+                            "type": "string",
+                            "value": "curl/7.68.0"
+                        },
+                        {
+                            "key": "istio.canonical_service",
+                            "type": "string",
+                            "value": "istio-ingressgateway"
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "string",
+                            "value": "200"
+                        },
+                        {
+                            "key": "request_size",
+                            "type": "string",
+                            "value": "0"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "client"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "zipkin"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": null
+                },
+                {
+                    "traceID": "bf4b0cc42c8f949e8db9b92d991bab69",
+                    "spanID": "0c12e099eaf3da3f",
+                    "operationName": "otel-go.default.svc.cluster.local:8080/*",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "bf4b0cc42c8f949e8db9b92d991bab69",
+                            "spanID": "8db9b92d991bab69"
+                        }
+                    ],
+                    "startTime": 1615835912953695,
+                    "duration": 15492,
+                    "tags": [
+                        {
+                            "key": "istio.canonical_service",
+                            "type": "string",
+                            "value": "otel-go"
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "GET"
+                        },
+                        {
+                            "key": "istio.namespace",
+                            "type": "string",
+                            "value": "default"
+                        },
+                        {
+                            "key": "upstream_cluster",
+                            "type": "string",
+                            "value": "inbound|8080||"
+                        },
+                        {
+                            "key": "response_flags",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "http.protocol",
+                            "type": "string",
+                            "value": "HTTP/1.1"
+                        },
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "proxy"
+                        },
+                        {
+                            "key": "istio.mesh_id",
+                            "type": "string",
+                            "value": "cluster.local"
+                        },
+                        {
+                            "key": "node_id",
+                            "type": "string",
+                            "value": "sidecar~172.17.0.10~otel-go-7d86964fbb-bvfd6.default~default.svc.cluster.local"
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "string",
+                            "value": "200"
+                        },
+                        {
+                            "key": "user_agent",
+                            "type": "string",
+                            "value": "curl/7.68.0"
+                        },
+                        {
+                            "key": "response_size",
+                            "type": "string",
+                            "value": "1215"
+                        },
+                        {
+                            "key": "guid:x-request-id",
+                            "type": "string",
+                            "value": "60195bd7-f931-987d-85a8-5acb7a435323"
+                        },
+                        {
+                            "key": "istio.canonical_revision",
+                            "type": "string",
+                            "value": "v1"
+                        },
+                        {
+                            "key": "peer.address",
+                            "type": "string",
+                            "value": "172.17.0.4"
+                        },
+                        {
+                            "key": "request_size",
+                            "type": "string",
+                            "value": "0"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://10.101.176.218/"
+                        },
+                        {
+                            "key": "downstream_cluster",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "server"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "zipkin"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p2",
+                    "warnings": null
+                },
+                {
+                    "traceID": "bf4b0cc42c8f949e8db9b92d991bab69",
+                    "spanID": "3590d8fd514618a0",
+                    "flags": 1,
+                    "operationName": "/",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "bf4b0cc42c8f949e8db9b92d991bab69",
+                            "spanID": "0c12e099eaf3da3f"
+                        }
+                    ],
+                    "startTime": 1615835912954149,
+                    "duration": 14692,
+                    "tags": [
+                        {
+                            "key": "net.transport",
+                            "type": "string",
+                            "value": "IP.TCP"
+                        },
+                        {
+                            "key": "net.peer.ip",
+                            "type": "string",
+                            "value": "127.0.0.1"
+                        },
+                        {
+                            "key": "net.peer.port",
+                            "type": "int64",
+                            "value": 33278
+                        },
+                        {
+                            "key": "net.host.ip",
+                            "type": "string",
+                            "value": "10.101.176.218"
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "GET"
+                        },
+                        {
+                            "key": "http.target",
+                            "type": "string",
+                            "value": "/"
+                        },
+                        {
+                            "key": "http.server_name",
+                            "type": "string",
+                            "value": "/"
+                        },
+                        {
+                            "key": "http.client_ip",
+                            "type": "string",
+                            "value": "172.17.0.1"
+                        },
+                        {
+                            "key": "http.user_agent",
+                            "type": "string",
+                            "value": "curl/7.68.0"
+                        },
+                        {
+                            "key": "http.scheme",
+                            "type": "string",
+                            "value": "http"
+                        },
+                        {
+                            "key": "http.host",
+                            "type": "string",
+                            "value": "10.101.176.218"
+                        },
+                        {
+                            "key": "http.flavor",
+                            "type": "string",
+                            "value": "1.1"
+                        },
+                        {
+                            "key": "http.wrote_bytes",
+                            "type": "int64",
+                            "value": 1215
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "int64",
+                            "value": 200
+                        },
+                        {
+                            "key": "service.name",
+                            "type": "string",
+                            "value": "unknown_service:app"
+                        },
+                        {
+                            "key": "telemetry.sdk.language",
+                            "type": "string",
+                            "value": "go"
+                        },
+                        {
+                            "key": "telemetry.sdk.name",
+                            "type": "string",
+                            "value": "opentelemetry"
+                        },
+                        {
+                            "key": "telemetry.sdk.version",
+                            "type": "string",
+                            "value": "0.18.0"
+                        },
+                        {
+                            "key": "otel.instrumentation_library.name",
+                            "type": "string",
+                            "value": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
+                        },
+                        {
+                            "key": "otel.instrumentation_library.version",
+                            "type": "string",
+                            "value": "semver:0.18.0"
+                        },
+                        {
+                            "key": "status.code",
+                            "type": "int64",
+                            "value": 0
+                        },
+                        {
+                            "key": "status.message",
+                            "type": "string",
+                            "value": "HTTP status code: 200"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "server"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "jaeger"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p3",
+                    "warnings": null
+                },
+                {
+                    "traceID": "bf4b0cc42c8f949e8db9b92d991bab69",
+                    "spanID": "2e02222b546c92e2",
+                    "flags": 1,
+                    "operationName": "GET",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "bf4b0cc42c8f949e8db9b92d991bab69",
+                            "spanID": "3590d8fd514618a0"
+                        }
+                    ],
+                    "startTime": 1615835912954192,
+                    "duration": 14600,
+                    "tags": [
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "GET"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://otel-python:8080"
+                        },
+                        {
+                            "key": "http.scheme",
+                            "type": "string",
+                            "value": "http"
+                        },
+                        {
+                            "key": "http.host",
+                            "type": "string",
+                            "value": "otel-python:8080"
+                        },
+                        {
+                            "key": "http.flavor",
+                            "type": "string",
+                            "value": "1.1"
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "int64",
+                            "value": 200
+                        },
+                        {
+                            "key": "service.name",
+                            "type": "string",
+                            "value": "unknown_service:app"
+                        },
+                        {
+                            "key": "telemetry.sdk.language",
+                            "type": "string",
+                            "value": "go"
+                        },
+                        {
+                            "key": "telemetry.sdk.name",
+                            "type": "string",
+                            "value": "opentelemetry"
+                        },
+                        {
+                            "key": "telemetry.sdk.version",
+                            "type": "string",
+                            "value": "0.18.0"
+                        },
+                        {
+                            "key": "otel.instrumentation_library.name",
+                            "type": "string",
+                            "value": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
+                        },
+                        {
+                            "key": "otel.instrumentation_library.version",
+                            "type": "string",
+                            "value": "semver:0.18.0"
+                        },
+                        {
+                            "key": "status.code",
+                            "type": "int64",
+                            "value": 0
+                        },
+                        {
+                            "key": "status.message",
+                            "type": "string",
+                            "value": "HTTP status code: 200"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "client"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "jaeger"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p3",
+                    "warnings": null
+                },
+                {
+                    "traceID": "bf4b0cc42c8f949e8db9b92d991bab69",
+                    "spanID": "3088d70cd403e633",
+                    "operationName": "otel-python.default.svc.cluster.local:8080/*",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "bf4b0cc42c8f949e8db9b92d991bab69",
+                            "spanID": "2e02222b546c92e2"
+                        }
+                    ],
+                    "startTime": 1615835912954339,
+                    "duration": 12946,
+                    "tags": [
+                        {
+                            "key": "istio.canonical_service",
+                            "type": "string",
+                            "value": "otel-go"
+                        },
+                        {
+                            "key": "response_flags",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "node_id",
+                            "type": "string",
+                            "value": "sidecar~172.17.0.10~otel-go-7d86964fbb-bvfd6.default~default.svc.cluster.local"
+                        },
+                        {
+                            "key": "istio.canonical_revision",
+                            "type": "string",
+                            "value": "v1"
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "GET"
+                        },
+                        {
+                            "key": "upstream_cluster",
+                            "type": "string",
+                            "value": "outbound|8080||otel-python.default.svc.cluster.local"
+                        },
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "proxy"
+                        },
+                        {
+                            "key": "istio.mesh_id",
+                            "type": "string",
+                            "value": "cluster.local"
+                        },
+                        {
+                            "key": "user_agent",
+                            "type": "string",
+                            "value": "Go-http-client/1.1"
+                        },
+                        {
+                            "key": "istio.namespace",
+                            "type": "string",
+                            "value": "default"
+                        },
+                        {
+                            "key": "guid:x-request-id",
+                            "type": "string",
+                            "value": "ff152f2f-fc4f-9555-a412-191653e1f63d"
+                        },
+                        {
+                            "key": "response_size",
+                            "type": "string",
+                            "value": "578"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://otel-python:8080/"
+                        },
+                        {
+                            "key": "peer.address",
+                            "type": "string",
+                            "value": "172.17.0.10"
+                        },
+                        {
+                            "key": "request_size",
+                            "type": "string",
+                            "value": "0"
+                        },
+                        {
+                            "key": "http.protocol",
+                            "type": "string",
+                            "value": "HTTP/1.1"
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "string",
+                            "value": "200"
+                        },
+                        {
+                            "key": "downstream_cluster",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "client"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "zipkin"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p2",
+                    "warnings": null
+                },
+                {
+                    "traceID": "bf4b0cc42c8f949e8db9b92d991bab69",
+                    "spanID": "82ace7cf350f19b9",
+                    "operationName": "otel-python.default.svc.cluster.local:8080/*",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "bf4b0cc42c8f949e8db9b92d991bab69",
+                            "spanID": "3088d70cd403e633"
+                        }
+                    ],
+                    "startTime": 1615835912954619,
+                    "duration": 12073,
+                    "tags": [
+                        {
+                            "key": "response_flags",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://otel-python:8080/"
+                        },
+                        {
+                            "key": "user_agent",
+                            "type": "string",
+                            "value": "Go-http-client/1.1"
+                        },
+                        {
+                            "key": "request_size",
+                            "type": "string",
+                            "value": "0"
+                        },
+                        {
+                            "key": "istio.namespace",
+                            "type": "string",
+                            "value": "default"
+                        },
+                        {
+                            "key": "istio.mesh_id",
+                            "type": "string",
+                            "value": "cluster.local"
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "string",
+                            "value": "200"
+                        },
+                        {
+                            "key": "guid:x-request-id",
+                            "type": "string",
+                            "value": "ff152f2f-fc4f-9555-a412-191653e1f63d"
+                        },
+                        {
+                            "key": "peer.address",
+                            "type": "string",
+                            "value": "172.17.0.10"
+                        },
+                        {
+                            "key": "downstream_cluster",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "istio.canonical_service",
+                            "type": "string",
+                            "value": "otel-python"
+                        },
+                        {
+                            "key": "istio.canonical_revision",
+                            "type": "string",
+                            "value": "v1"
+                        },
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "proxy"
+                        },
+                        {
+                            "key": "http.protocol",
+                            "type": "string",
+                            "value": "HTTP/1.1"
+                        },
+                        {
+                            "key": "node_id",
+                            "type": "string",
+                            "value": "sidecar~172.17.0.9~otel-python-7889fd76dd-4npqp.default~default.svc.cluster.local"
+                        },
+                        {
+                            "key": "response_size",
+                            "type": "string",
+                            "value": "578"
+                        },
+                        {
+                            "key": "upstream_cluster",
+                            "type": "string",
+                            "value": "inbound|8080||"
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "GET"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "server"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "zipkin"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p4",
+                    "warnings": null
+                },
+                {
+                    "traceID": "bf4b0cc42c8f949e8db9b92d991bab69",
+                    "spanID": "2be6873d2aff6761",
+                    "flags": 1,
+                    "operationName": "/",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "bf4b0cc42c8f949e8db9b92d991bab69",
+                            "spanID": "82ace7cf350f19b9"
+                        }
+                    ],
+                    "startTime": 1615835912955110,
+                    "duration": 10956,
+                    "tags": [
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "GET"
+                        },
+                        {
+                            "key": "http.server_name",
+                            "type": "string",
+                            "value": "otel-python"
+                        },
+                        {
+                            "key": "http.scheme",
+                            "type": "string",
+                            "value": "http"
+                        },
+                        {
+                            "key": "net.host.port",
+                            "type": "int64",
+                            "value": 8080
+                        },
+                        {
+                            "key": "http.host",
+                            "type": "string",
+                            "value": "otel-python:8080"
+                        },
+                        {
+                            "key": "http.target",
+                            "type": "string",
+                            "value": "/"
+                        },
+                        {
+                            "key": "net.peer.ip",
+                            "type": "string",
+                            "value": "127.0.0.1"
+                        },
+                        {
+                            "key": "http.user_agent",
+                            "type": "string",
+                            "value": "Go-http-client/1.1"
+                        },
+                        {
+                            "key": "net.peer.port",
+                            "type": "string",
+                            "value": "33284"
+                        },
+                        {
+                            "key": "http.flavor",
+                            "type": "string",
+                            "value": "1.1"
+                        },
+                        {
+                            "key": "http.route",
+                            "type": "string",
+                            "value": "/"
+                        },
+                        {
+                            "key": "http.status_text",
+                            "type": "string",
+                            "value": "OK"
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "int64",
+                            "value": 200
+                        },
+                        {
+                            "key": "telemetry.sdk.language",
+                            "type": "string",
+                            "value": "python"
+                        },
+                        {
+                            "key": "telemetry.sdk.name",
+                            "type": "string",
+                            "value": "opentelemetry"
+                        },
+                        {
+                            "key": "telemetry.sdk.version",
+                            "type": "string",
+                            "value": "1.0.0rc1"
+                        },
+                        {
+                            "key": "service.namespace",
+                            "type": "string",
+                            "value": "iscomp"
+                        },
+                        {
+                            "key": "service.name",
+                            "type": "string",
+                            "value": "otel-python"
+                        },
+                        {
+                            "key": "service.version",
+                            "type": "string",
+                            "value": "0.0.1"
+                        },
+                        {
+                            "key": "service.instance.id",
+                            "type": "string",
+                            "value": "6acb2e07-aea5-4418-b6d0-cd3ebc29e55c"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "server"
+                        },
+                        {
+                            "key": "otel.library.name",
+                            "type": "string",
+                            "value": "opentelemetry.instrumentation.flask"
+                        },
+                        {
+                            "key": "otel.library.version",
+                            "type": "string",
+                            "value": "0.18b1"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "jaeger"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p5",
+                    "warnings": null
+                },
+                {
+                    "traceID": "bf4b0cc42c8f949e8db9b92d991bab69",
+                    "spanID": "9f4f0c91ea11dd24",
+                    "flags": 1,
+                    "operationName": "HTTP GET",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "bf4b0cc42c8f949e8db9b92d991bab69",
+                            "spanID": "2be6873d2aff6761"
+                        }
+                    ],
+                    "startTime": 1615835912956047,
+                    "duration": 9038,
+                    "tags": [
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "GET"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://otel-java:8080"
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "int64",
+                            "value": 200
+                        },
+                        {
+                            "key": "http.status_text",
+                            "type": "string",
+                            "value": "OK"
+                        },
+                        {
+                            "key": "telemetry.sdk.language",
+                            "type": "string",
+                            "value": "python"
+                        },
+                        {
+                            "key": "telemetry.sdk.name",
+                            "type": "string",
+                            "value": "opentelemetry"
+                        },
+                        {
+                            "key": "telemetry.sdk.version",
+                            "type": "string",
+                            "value": "1.0.0rc1"
+                        },
+                        {
+                            "key": "service.namespace",
+                            "type": "string",
+                            "value": "iscomp"
+                        },
+                        {
+                            "key": "service.name",
+                            "type": "string",
+                            "value": "otel-python"
+                        },
+                        {
+                            "key": "service.version",
+                            "type": "string",
+                            "value": "0.0.1"
+                        },
+                        {
+                            "key": "service.instance.id",
+                            "type": "string",
+                            "value": "6acb2e07-aea5-4418-b6d0-cd3ebc29e55c"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "client"
+                        },
+                        {
+                            "key": "otel.library.name",
+                            "type": "string",
+                            "value": "opentelemetry.instrumentation.requests"
+                        },
+                        {
+                            "key": "otel.library.version",
+                            "type": "string",
+                            "value": "0.18b1"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "jaeger"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p5",
+                    "warnings": null
+                },
+                {
+                    "traceID": "bf4b0cc42c8f949e8db9b92d991bab69",
+                    "spanID": "3b300ddd796599fa",
+                    "operationName": "otel-java.default.svc.cluster.local:8080/*",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "bf4b0cc42c8f949e8db9b92d991bab69",
+                            "spanID": "9f4f0c91ea11dd24"
+                        }
+                    ],
+                    "startTime": 1615835912958350,
+                    "duration": 5428,
+                    "tags": [
+                        {
+                            "key": "istio.canonical_service",
+                            "type": "string",
+                            "value": "otel-python"
+                        },
+                        {
+                            "key": "http.protocol",
+                            "type": "string",
+                            "value": "HTTP/1.1"
+                        },
+                        {
+                            "key": "request_size",
+                            "type": "string",
+                            "value": "0"
+                        },
+                        {
+                            "key": "response_size",
+                            "type": "string",
+                            "value": "578"
+                        },
+                        {
+                            "key": "node_id",
+                            "type": "string",
+                            "value": "sidecar~172.17.0.9~otel-python-7889fd76dd-4npqp.default~default.svc.cluster.local"
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "string",
+                            "value": "200"
+                        },
+                        {
+                            "key": "istio.canonical_revision",
+                            "type": "string",
+                            "value": "v1"
+                        },
+                        {
+                            "key": "response_flags",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "proxy"
+                        },
+                        {
+                            "key": "user_agent",
+                            "type": "string",
+                            "value": "python-requests/2.25.1"
+                        },
+                        {
+                            "key": "istio.mesh_id",
+                            "type": "string",
+                            "value": "cluster.local"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://otel-java:8080/"
+                        },
+                        {
+                            "key": "istio.namespace",
+                            "type": "string",
+                            "value": "default"
+                        },
+                        {
+                            "key": "upstream_cluster",
+                            "type": "string",
+                            "value": "outbound|8080||otel-java.default.svc.cluster.local"
+                        },
+                        {
+                            "key": "downstream_cluster",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "guid:x-request-id",
+                            "type": "string",
+                            "value": "be559153-66fa-908d-b6d3-d8dcb0cc9256"
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "GET"
+                        },
+                        {
+                            "key": "peer.address",
+                            "type": "string",
+                            "value": "172.17.0.9"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "client"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "zipkin"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p4",
+                    "warnings": null
+                },
+                {
+                    "traceID": "bf4b0cc42c8f949e8db9b92d991bab69",
+                    "spanID": "4967b4c1b6e2cd5b",
+                    "operationName": "otel-java.default.svc.cluster.local:8080/*",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "bf4b0cc42c8f949e8db9b92d991bab69",
+                            "spanID": "3b300ddd796599fa"
+                        }
+                    ],
+                    "startTime": 1615835912958634,
+                    "duration": 4675,
+                    "tags": [
+                        {
+                            "key": "peer.address",
+                            "type": "string",
+                            "value": "172.17.0.9"
+                        },
+                        {
+                            "key": "guid:x-request-id",
+                            "type": "string",
+                            "value": "be559153-66fa-908d-b6d3-d8dcb0cc9256"
+                        },
+                        {
+                            "key": "response_flags",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "istio.canonical_service",
+                            "type": "string",
+                            "value": "otel-java"
+                        },
+                        {
+                            "key": "istio.namespace",
+                            "type": "string",
+                            "value": "default"
+                        },
+                        {
+                            "key": "response_size",
+                            "type": "string",
+                            "value": "578"
+                        },
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "proxy"
+                        },
+                        {
+                            "key": "downstream_cluster",
+                            "type": "string",
+                            "value": "-"
+                        },
+                        {
+                            "key": "user_agent",
+                            "type": "string",
+                            "value": "python-requests/2.25.1"
+                        },
+                        {
+                            "key": "http.protocol",
+                            "type": "string",
+                            "value": "HTTP/1.1"
+                        },
+                        {
+                            "key": "istio.mesh_id",
+                            "type": "string",
+                            "value": "cluster.local"
+                        },
+                        {
+                            "key": "request_size",
+                            "type": "string",
+                            "value": "0"
+                        },
+                        {
+                            "key": "node_id",
+                            "type": "string",
+                            "value": "sidecar~172.17.0.8~otel-java-5b8c854cdc-ds7bb.default~default.svc.cluster.local"
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "string",
+                            "value": "200"
+                        },
+                        {
+                            "key": "upstream_cluster",
+                            "type": "string",
+                            "value": "inbound|8080||"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://otel-java:8080/"
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "GET"
+                        },
+                        {
+                            "key": "istio.canonical_revision",
+                            "type": "string",
+                            "value": "v1"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "server"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "zipkin"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p6",
+                    "warnings": null
+                },
+                {
+                    "traceID": "bf4b0cc42c8f949e8db9b92d991bab69",
+                    "spanID": "035af75f1481750f",
+                    "operationName": "/",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "bf4b0cc42c8f949e8db9b92d991bab69",
+                            "spanID": "4967b4c1b6e2cd5b"
+                        }
+                    ],
+                    "startTime": 1615835912959002,
+                    "duration": 6195,
+                    "tags": [
+                        {
+                            "key": "net.peer.port",
+                            "type": "int64",
+                            "value": 33288
+                        },
+                        {
+                            "key": "http.user_agent",
+                            "type": "string",
+                            "value": "python-requests/2.25.1"
+                        },
+                        {
+                            "key": "http.flavor",
+                            "type": "string",
+                            "value": "1.1"
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "int64",
+                            "value": 200
+                        },
+                        {
+                            "key": "thread.name",
+                            "type": "string",
+                            "value": "http-nio-8080-exec-2"
+                        },
+                        {
+                            "key": "net.peer.ip",
+                            "type": "string",
+                            "value": "127.0.0.1"
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "GET"
+                        },
+                        {
+                            "key": "thread.id",
+                            "type": "int64",
+                            "value": 20
+                        },
+                        {
+                            "key": "http.client_ip",
+                            "type": "string",
+                            "value": "127.0.0.1"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://otel-java:8080/"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "server"
+                        },
+                        {
+                            "key": "otel.library.name",
+                            "type": "string",
+                            "value": "io.opentelemetry.javaagent.tomcat-7.0"
+                        },
+                        {
+                            "key": "otel.library.version",
+                            "type": "string",
+                            "value": "1.0.0"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p7",
+                    "warnings": null
+                },
+                {
+                    "traceID": "bf4b0cc42c8f949e8db9b92d991bab69",
+                    "spanID": "88a1c4a0041a4628",
+                    "operationName": "ExampleController.get",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "bf4b0cc42c8f949e8db9b92d991bab69",
+                            "spanID": "035af75f1481750f"
+                        }
+                    ],
+                    "startTime": 1615835912960985,
+                    "duration": 3263,
+                    "tags": [
+                        {
+                            "key": "thread.name",
+                            "type": "string",
+                            "value": "http-nio-8080-exec-2"
+                        },
+                        {
+                            "key": "thread.id",
+                            "type": "int64",
+                            "value": 20
+                        },
+                        {
+                            "key": "otel.library.name",
+                            "type": "string",
+                            "value": "io.opentelemetry.javaagent.spring-webmvc-3.1"
+                        },
+                        {
+                            "key": "otel.library.version",
+                            "type": "string",
+                            "value": "1.0.0"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p7",
+                    "warnings": null
+                }
+            ],
+            "processes": {
+                "p1": {
+                    "serviceName": "istio-ingressgateway",
+                    "tags": [
+                        {
+                            "key": "ip",
+                            "type": "int64",
+                            "value": -1408172028
+                        }
+                    ]
+                },
+                "p2": {
+                    "serviceName": "otel-go.default",
+                    "tags": [
+                        {
+                            "key": "ip",
+                            "type": "int64",
+                            "value": -1408172022
+                        }
+                    ]
+                },
+                "p3": {
+                    "serviceName": "otel-go",
+                    "tags": [
+                        {
+                            "key": "pid",
+                            "type": "string",
+                            "value": "8"
+                        }
+                    ]
+                },
+                "p4": {
+                    "serviceName": "otel-python.default",
+                    "tags": [
+                        {
+                            "key": "ip",
+                            "type": "int64",
+                            "value": -1408172023
+                        }
+                    ]
+                },
+                "p5": {
+                    "serviceName": "otel-python",
+                    "tags": []
+                },
+                "p6": {
+                    "serviceName": "otel-java.default",
+                    "tags": [
+                        {
+                            "key": "ip",
+                            "type": "int64",
+                            "value": -1408172024
+                        }
+                    ]
+                },
+                "p7": {
+                    "serviceName": "otel-java",
+                    "tags": [
+                        {
+                            "key": "jaeger.version",
+                            "type": "string",
+                            "value": "opentelemetry-java"
+                        },
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "172.17.0.8"
+                        },
+                        {
+                            "key": "hostname",
+                            "type": "string",
+                            "value": "otel-java-5b8c854cdc-ds7bb"
+                        },
+                        {
+                            "key": "os.description",
+                            "type": "string",
+                            "value": "Linux 4.19.157"
+                        },
+                        {
+                            "key": "os.type",
+                            "type": "string",
+                            "value": "LINUX"
+                        },
+                        {
+                            "key": "process.command_line",
+                            "type": "string",
+                            "value": "/usr/lib/jvm/adoptopenjdk-11-hotspot-jre-amd64:bin:java -Djava.awt.headless=true -Djava.security.egd=file:/dev/./urandom -Djava.io.tmpdir=/tmp -Dnetworkaddress.cache.ttl=120 -XX:+UseContainerSupport -javaagent:/usr/local/share/opentelemetry/opentelemetry-javaagent-all.jar"
+                        },
+                        {
+                            "key": "process.executable.path",
+                            "type": "string",
+                            "value": "/usr/lib/jvm/adoptopenjdk-11-hotspot-jre-amd64:bin:java"
+                        },
+                        {
+                            "key": "process.pid",
+                            "type": "int64",
+                            "value": 7
+                        },
+                        {
+                            "key": "process.runtime.description",
+                            "type": "string",
+                            "value": "AdoptOpenJDK OpenJDK 64-Bit Server VM 11.0.10+9"
+                        },
+                        {
+                            "key": "process.runtime.name",
+                            "type": "string",
+                            "value": "OpenJDK Runtime Environment"
+                        },
+                        {
+                            "key": "process.runtime.version",
+                            "type": "string",
+                            "value": "11.0.10+9"
+                        },
+                        {
+                            "key": "service.instance.id",
+                            "type": "string",
+                            "value": "d1e639ec-4931-426f-8138-85f945122cf3"
+                        },
+                        {
+                            "key": "service.name",
+                            "type": "string",
+                            "value": "otel-java"
+                        },
+                        {
+                            "key": "service.namespace",
+                            "type": "string",
+                            "value": "iscomp"
+                        },
+                        {
+                            "key": "service.version",
+                            "type": "string",
+                            "value": "0.0.1"
+                        },
+                        {
+                            "key": "telemetry.auto.version",
+                            "type": "string",
+                            "value": "1.0.0"
+                        },
+                        {
+                            "key": "telemetry.sdk.language",
+                            "type": "string",
+                            "value": "java"
+                        },
+                        {
+                            "key": "telemetry.sdk.name",
+                            "type": "string",
+                            "value": "opentelemetry"
+                        },
+                        {
+                            "key": "telemetry.sdk.version",
+                            "type": "string",
+                            "value": "1.0.0"
+                        }
+                    ]
+                }
+            },
+            "warnings": null
+        }
+    ],
+    "total": 0,
+    "limit": 0,
+    "offset": 0,
+    "errors": null
+}
