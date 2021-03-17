@@ -34,3 +34,6 @@ build/
 
 ### Go ###
 **/go/dist/**
+
+### Otel ###
+java/opentelemetry-javaagent-all.jar

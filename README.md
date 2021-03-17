@@ -21,8 +21,8 @@ docker run -d --name jaeger \
      java -javaagent:opentelemetry-javaagent-all.jar \
           -Dotel.traces.exporter="jaeger" \
           -Dotel.metrics.exporter="none" \
-          -Dotel.resource.attributes="service.name=java-service"
-          -jar target/service-1.0.0.jar
+          -Dotel.resource.attributes="service.name=java-service" \
+          -jar service/target/service-1.0.0.jar
      ```
     * Run client to perform some HTTP calls to the service.
      ```bash
