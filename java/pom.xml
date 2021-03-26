@@ -21,8 +21,11 @@
     </properties>
 
     <modules>
-         <module>service</module>
-         <module>client</module>
+         <module>service-web</module>
+         <module>service-webflux</module>
+         <module>client-web</module>
+         <module>client-webflux</module>
+         <module>service-web-jetty</module>
     </modules>
 
 </project>
